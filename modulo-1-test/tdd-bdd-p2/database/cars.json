@@ -1,0 +1,23 @@
+[
+  {
+    "id": "f020677f-1c2b-4dec-b75a-b8531ed29220",
+    "name": "Element",
+    "releaseYear": 2022,
+    "avalible": true,
+    "gasAvalible": true
+  },
+  {
+    "id": "02b4d02b-00ed-44df-a0b6-cd019ebad4f4",
+    "name": "Focus",
+    "releaseYear": 2023,
+    "avalible": true,
+    "gasAvalible": true
+  },
+  {
+    "id": "6621cf34-43e5-4bd7-9b3f-82875f7fe8ee",
+    "name": "Jetta",
+    "releaseYear": 2023,
+    "avalible": true,
+    "gasAvalible": true
+  }
+]
