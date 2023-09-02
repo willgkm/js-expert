@@ -5,7 +5,6 @@
   "main": "src/api.js",
   "scripts": {
     "test": "npx mocha -w --parallel **/**/*.test.js",
-    "test:api": "npx mocha -w test/api/*.test.js",
     "test:cov": "NODE_ENV=test npx nyc npx mocha --exit --parallel **/**/*.test.js",
     "seed": "node ./seed",
     "start": "node  **/api.js"

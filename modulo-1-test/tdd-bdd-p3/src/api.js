@@ -9,7 +9,7 @@ const carDatabase = join(__dirname, "./../database", "cars.json");
 const carService = new CarService({ cars: carDatabase });
 
 const routes = {
-  "/car:post": async (request, response) => {
+  "/car/available:post": async (request, response) => {
     try {
       let data = await once(request, "data"); 
       let result = await carService.getAvailableCar(JSON.parse(data))
@@ -17,8 +17,22 @@ const routes = {
       response.write(JSON.stringify(result));
       return response.end()
     } catch (error) {
-      console.log(error)
-      return response.end(error)
+      response.writeHead(400, {'Content-Type': 'application/json' });
+      response.write(JSON.stringify(error))
+      return response.end()
+    }
+  },
+  "/rent:post": async (request, response) => {
+    try {
+      let data = JSON.parse(await once(request, "data" ))
+      let transaction = await carService.rent(data.costumer, data.carCategory, data.rentDays);
+      response.writeHead(200, { 'Content-Type': 'application/json' });
+      response.write(JSON.stringify(transaction));
+      return response.end()
+    } catch (error) {
+      response.writeHead(400, {'Content-Type': 'application/json' });
+      response.write(JSON.stringify(error))
+      return response.end()
     }
   },
   default(request, response) {
