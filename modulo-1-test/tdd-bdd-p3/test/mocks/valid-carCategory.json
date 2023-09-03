@@ -1,10 +1,10 @@
 {
-  "id": "96302a04-f8bb-401f-a9df-8b980dc88219",
-  "name": "Passenger Van",
+  "id": "23002dce-9e94-421f-935c-865c1c0a03de",
+  "name": "Minivan",
   "carIds": [
-    "6adc6ed0-deb0-40e6-8882-198984ab893c",
-    "b3e9d589-de57-47a1-87f7-eb9f5adc4286",
-    "0831cfa2-a2e0-4eea-8013-31956bf6e859"
+    "2364978d-c166-4521-997a-0edb601fac20",
+    "0657ec4b-533d-4ed8-8c0d-11dd31867c90",
+    "ccbf5211-09ba-49c5-9e3e-55d2db64c746"
   ],
-  "price": 98.29
+  "price": "54.72"
 }

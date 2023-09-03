@@ -23,10 +23,9 @@ class CarService {
     return  carId 
   }
 
-  async  getAvailableCar(carCategory){ 
+  async getAvailableCar(carCategory){ 
     const carId = this.chooseRandonCar(carCategory)
     const car = await this.carRepository.find(carId)
-
     return car
   }
 
